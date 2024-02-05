@@ -1,8 +1,26 @@
 {
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
+    "project": "./tsconfig.json",
   },
+
+  "plugins": [
+    "import",
+    "json",
+    "mozilla",
+    "no-unsanitized",
+    "sort-exports",
+    // TT
+    "@typescript-eslint",
+    "eslint-plugin-neuracr-tt"
+  ],
+
+  "extends": [
+    "plugin:json/recommended",
+    "plugin:no-unsanitized/DOM"
+  ],
 
   "env": {
     "browser": true,
@@ -174,5 +192,8 @@
       "ignoreCase": true,
     }],
     "template-curly-spacing": ["error", "never"],
+
+    // TT
+    "neuracr-tt/trusted-types-checks": "error"
   },
 }
