@@ -19,5 +19,6 @@
       "web-null_l10n": ["../web/genericl10n.js"]
     }
   },
+  "include": ["src/**/*"],
   "files": ["src/pdf.js", "web/pdf_viewer.component.js"]
 }
